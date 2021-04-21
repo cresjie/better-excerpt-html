@@ -39,7 +39,7 @@
 		}
 
 		if( append ) {
-			var p = lastTextN.parentNode;
+			var p = lastTextN ? lastTextN.parentNode : domTree.slice(-1);
 			p.innerHTML = p.innerHTML + append;
 		}
 
