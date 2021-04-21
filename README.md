@@ -1,4 +1,5 @@
 
+
 # better-excerpt-html
 generate excerpt from html text while preserving html structure. Very lightweight and standalone
 
@@ -7,8 +8,14 @@ generate excerpt from html text while preserving html structure. Very lightweigh
 ```
 $ npm i better-excerpt-html --save
 ```
+# API
+```Javascript
+excerptHtml(htmlText, characterLimit, [appendText]); //return html text
+excerptStripHtml(htmlText, characterLimit); //return text
+```
 
 # Usage
+**SAMPLE 1**
 var htmlText =
 ```HTML
 <ul>
@@ -34,5 +41,14 @@ var output = excerptHtml(htmlText, 200, '...');
    <li>Ut pellentesque neque non est cursus condimentum.</li>
    <li>Vestibulum varius...</li>
 </ul>
+```
+
+**SAMPLE 2**
+```Javascript
+var output = excerptStripHtml(htmlText, 200);
+```
+**OUTPUT**
+```Javascript
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum lacus at nisi tristique, dapibus lobortis purus consectetur. Ut pellentesque neque non est cursus condimentum. Vestibulum varius"
 ```
 

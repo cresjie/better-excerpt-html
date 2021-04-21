@@ -47,5 +47,10 @@
 		
 
 	}
+
+	window.excerptStripHtml = function(html, limit){
+		var doc = new DOMParser().parseFromString(html, "text/html");
+		return doc.body.innerText.substr(0, limit);
+	}
 })();
 
