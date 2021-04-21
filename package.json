@@ -1,6 +1,6 @@
 {
   "name": "better-excerpt-html",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "generate excerpt from html text while preserving html structure",
   "main": "excerpt.min.js",
   "scripts": {
