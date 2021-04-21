@@ -15,7 +15,6 @@
 
 		for(var n of domTree){
 			if( n.textContent.trim() ) {
-				console.log(n.textContent);
 				if( flagged ) {
 					if( parents.indexOf(n.parentNode) > -1 ) {
 						n.textContent = '';
