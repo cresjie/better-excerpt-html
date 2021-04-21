@@ -16,6 +16,7 @@ excerptStripHtml(htmlText, characterLimit); //return text
 
 # Usage
 **SAMPLE 1**
+
 var htmlText =
 ```HTML
 <ul>
